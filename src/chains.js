@@ -2,8 +2,8 @@
 import { defineChain } from 'viem';
 
 // ПОДСТАВЬ сюда свои значения из Tenderly:
-const VNET_CHAIN_ID = 1344556; // <-- сюда твой chainId
-const VNET_RPC_URL = 'https://virtual.rpc.tenderly.co/Correy/project/public/17111969Zz'; // <-- сюда твой Public RPC
+const VNET_CHAIN_ID = 1; // <-- сюда твой chainId
+const VNET_RPC_URL = 'https://virtual.rpc.tenderly.co/Correy/project/public/17111969'; // <-- сюда твой Public RPC
 const VNET_EXPLORER_URL =
   'https://dashboard.tenderly.co/<project>/vnet/<id>/explorer'; // можно временно оставить так или поставить свой
 

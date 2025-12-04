@@ -1,0 +1,22 @@
+// src/chains.js
+import { defineChain } from 'viem';
+
+// 1. Подставь сюда свои значения
+const VNET_CHAIN_ID = 1; // <-- поставь свой Chain ID из Tenderly
+const VNET_RPC_URL = 'https://virtual.rpc.tenderly.co/Correy/project/public/17111969'; // <-- твой Public RPC
+
+
+export const tenderlyVnet = defineChain({
+  id: VNET_CHAIN_ID,
+  name: 'My Tenderly Virtual Mainnet',
+  nativeCurrency: {
+    name: 'Virtual Ether',
+    symbol: 'vETH',
+    decimals: 18,
+  },
+  rpcUrls: {
+    default: { http: [VNET_RPC_URL] },
+    public: { http: [VNET_RPC_URL] },
+  },
+      : undefined,
+});
